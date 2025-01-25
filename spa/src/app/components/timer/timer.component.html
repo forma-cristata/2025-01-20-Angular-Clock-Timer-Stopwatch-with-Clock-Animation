@@ -1,0 +1,32 @@
+<div class="left-half clocking">
+  <div class="analog-clock">
+    <h1 class="comp-title">Timer</h1>
+    <!--<div class="rounded-circle-clock m-auto d-none" style="width:400px;height:400px;">
+      <div class="center-dot d-none" style="width: 12px; height: 12px;"></div>
+      <div class="hours-hand-timer d-none" style="width:6px; height:200px;"></div>
+    </div>-->
+
+    <div class="block">
+    <i class="material-icons" style="font-size:72px;">alarm</i>
+    </div>
+
+  </div>
+  <div [formGroup]="timerForm"  (ngSubmit)="onSubmit($event)" class="digital-clock">
+    <input type="number" formControlName="inputHours" min="0" class="d-inline-block inputs-time hour-input fs-4 form-control my-auto" placeholder="00"/>
+    <h1 class="d-none stopwatch-hours countdown dig-comps mx-2">{{this.hours}}</h1>
+
+    <h1 class="dig-comps my-auto">:</h1>
+
+    <input type="number" formControlName="inputMinutes" min="0" class="d-inline-block inputs-time minute-input fs-4 form-control my-auto" placeholder="00"/>
+    <h1 class="d-none stopwatch-minutes countdown dig-comps mx-2">{{this.minutes}}</h1>
+
+    <h1 class="dig-comps">:</h1>
+
+    <input type="number" min="0" formControlName="inputSeconds" class="d-inline-block inputs-time second-input fs-4 form-control my-auto" placeholder="00"/>
+    <h1 class="d-none stopwatch-seconds countdown dig-comps mx-2">{{this.seconds}}</h1>
+
+    <button type="submit" class="start-watch-timer fs-4 my-auto btn btn-success d-inline-block" (click)="onSubmit($event)">Start</button>
+    <button type="button" class="reset-timer fs-4 my-auto btn btn-success d-none" (click)="resetTimer()">Reset</button>
+  </div>
+
+</div>

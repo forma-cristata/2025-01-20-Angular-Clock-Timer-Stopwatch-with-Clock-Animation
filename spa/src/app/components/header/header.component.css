@@ -1,0 +1,24 @@
+.whole-nav{
+  background-color: var(--darkIndigo);
+  border-right: 3px dotted var(--peachFuzz);
+  opacity: 80%;
+  width: 10vw;
+  min-width: fit-content;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.top-half-nav, .bottom-half-nav{
+  height: 50%;
+  width: 100%;
+  color: var(--peachFuzz);
+  background-color: inherit;
+}
+.top-half-nav:hover, .bottom-half-nav:hover{
+  background-color: var(--darkIndigo);
+  color: var(--sunnyYellow);
+}
+h1{
+  background-color: inherit;
+}

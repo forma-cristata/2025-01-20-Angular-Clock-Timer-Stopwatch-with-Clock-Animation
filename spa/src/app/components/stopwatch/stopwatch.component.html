@@ -1,0 +1,16 @@
+<div class="left-half clocking">
+  <div class="analog-clock">
+    <h1 class="comp-title">Stopwatch</h1>
+  </div>
+  <div class="digital-clock">
+    <h1 class="stopwatch-hours dig-comps">{{this.hours}}</h1>
+    <h1 class="dig-comps">:</h1>
+    <h1 class="stopwatch-minutes dig-comps">{{this.minutes}}</h1>
+    <h1 class="dig-comps">:</h1>
+    <h1 class="stopwatch-seconds dig-comps">{{this.seconds}}</h1>
+    <button class="start-watch fs-4 btn btn-success d-inline-block" (click)="startWatch()">Start</button>
+    <button class="stop-watch fs-4 btn btn-danger d-none" (click)="stopWatch()">Stop</button>
+    <button class="pause-watch fs-4 btn btn-danger d-none" (click)="pauseWatch()">Pause</button>
+    <button class="restart-watch fs-4 btn btn-danger d-none" (click)="restartWatch()">Resume</button>
+  </div>
+</div>

@@ -1,0 +1,118 @@
+.clocking{
+  transform: translate(-50%, -50%);
+  border-bottom-right-radius: 20%;
+  width: 80%;
+  left: 50%;
+}
+.analog-clock{
+  width: 90%;
+  height: 80%;
+  background-color: var(--paleOrange);
+  margin: 0 0;
+  margin-top: 5%;
+  border-top-left-radius: 25%;
+  border-bottom-right-radius: 20%;
+  opacity: 50%;
+}
+.digital-clock{
+  background-color: inherit;
+  width: 80%;
+  height: 15%;
+  position: absolute;
+  bottom: 0;
+  padding: 5%;
+}
+.comp-title{
+  background-color: inherit;
+  color: var(--darkIndigo);
+  float: right;
+  width: fit-content;
+  margin: 2% 2%;
+  text-decoration: dotted underline;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.inputs-time{
+  width: 10%;
+  min-width: 60px;
+  text-align: center;
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.form-control {
+  color: var(--sunnyYellow);
+  background-color: var(--lightIndigo);
+  border: 1px solid var(--peachFuzz);
+}
+.dig-comps{
+  float: left;
+  color: var(--peachFuzz);
+  background-color: inherit;
+}
+/*Bootstrap stuff*/
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: var(--successfulCranbery);
+  box-shadow: 0 1px 1px var(--successfulCranbery) inset, 0 0 8px var(--successfulCranbery);
+  outline: 0 none;
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--tealPlaceholder);
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--tealPlaceholder);
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: var(--tealPlaceholder);
+}
+
+/*
+
+.hours-hand-timer{
+  position: fixed;
+  left: 45%;
+  top: inherit;
+  !*animation: tick 43200s infinite;*!
+  background-color: var(--dangerTealHover);
+}
+
+.center-dot{
+  background-color: var(--dangerTealHover);
+  position: fixed;
+  left: 45%;
+  top: 49%;
+  border-radius: 50%;
+  z-index: 100;
+}
+.rounded-circle-clock{
+  background-color: rgba(255, 255, 255, 0);
+  transform-origin: center;
+  transform: rotate(-90deg);
+}
+*/

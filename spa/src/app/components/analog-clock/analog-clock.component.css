@@ -1,0 +1,307 @@
+@keyframes tick {
+  from{
+
+    transform: rotate(90deg);
+    transform-origin: center bottom;
+  }
+  /*1.67% per minute = 6deg per tick*/
+  1.67%{
+
+    transform: rotate(96deg);
+    transform-origin: center bottom;
+  }
+  3.33%{
+    transform: rotate(102deg);
+    transform-origin: center bottom;
+  }
+  5%{
+    transform: rotate(108deg);
+    transform-origin: center bottom;
+  }
+  6.67%{
+    transform: rotate(114deg);
+    transform-origin: center bottom;
+  }
+  8.33%{
+    transform: rotate(120deg);
+    transform-origin: center bottom;
+  }
+  10%{
+    transform: rotate(126deg);
+    transform-origin: center bottom;
+  }
+  11.67%{
+    transform: rotate(132deg);
+    transform-origin: center bottom;
+  }
+  13.33%{
+    transform: rotate(138deg);
+    transform-origin: center bottom;
+  }
+  15%{
+    transform: rotate(144deg);
+    transform-origin: center bottom;
+  }
+  16.67%{
+    transform: rotate(150deg);
+    transform-origin: center bottom;
+  }
+  18.33%{
+    transform: rotate(156deg);
+    transform-origin: center bottom;
+  }
+  20%{
+    transform: rotate(162deg);
+    transform-origin: center bottom;
+  }
+  21.67%{
+    transform: rotate(168deg);
+    transform-origin: center bottom;
+  }
+  23.33%{
+    transform: rotate(174deg);
+    transform-origin: center bottom;
+  }
+  25%{
+    transform: rotate(180deg);
+    transform-origin: center bottom;
+  }
+  26.67%{
+    transform: rotate(186deg);
+    transform-origin: center bottom;
+  }
+  28.33%{
+    transform: rotate(192deg);
+    transform-origin: center bottom;
+  }
+  30%{
+    transform: rotate(198deg);
+    transform-origin: center bottom;
+  }
+  31.67%{
+    transform: rotate(204deg);
+    transform-origin: center bottom;
+  }
+  33.33%{
+    transform: rotate(210deg);
+    transform-origin: center bottom;
+  }
+  35%{
+    transform: rotate(216deg);
+    transform-origin: center bottom;
+  }
+  36.67%{
+    transform: rotate(222deg);
+    transform-origin: center bottom;
+  }
+  38.33%{
+    transform: rotate(228deg);
+    transform-origin: center bottom;
+  }
+  40%{
+    transform: rotate(234deg);
+    transform-origin: center bottom;
+  }
+  41.67%{
+    transform: rotate(240deg);
+    transform-origin: center bottom;
+  }
+  43.33%{
+    transform: rotate(246deg);
+    transform-origin: center bottom;
+  }
+  45%{
+    transform: rotate(252deg);
+    transform-origin: center bottom;
+  }
+  46.67%{
+    transform: rotate(258deg);
+    transform-origin: center bottom;
+  }
+  48.33%{
+    transform: rotate(264deg);
+    transform-origin: center bottom;
+  }
+  50%{
+    transform: rotate(270deg);
+    transform-origin: center bottom;
+  }
+  51.67%{
+    transform: rotate(276deg);
+    transform-origin: center bottom;
+  }
+  53.33%{
+    transform: rotate(282deg);
+    transform-origin: center bottom;
+  }
+  55%{
+    transform: rotate(288deg);
+    transform-origin: center bottom;
+  }
+  56.67%{
+    transform: rotate(294deg);
+    transform-origin: center bottom;
+  }
+  58.33%{
+    transform: rotate(300deg);
+    transform-origin: center bottom;
+  }
+  60%{
+    transform: rotate(306deg);
+    transform-origin: center bottom;
+  }
+  61.67%{
+    transform: rotate(312deg);
+    transform-origin: center bottom;
+  }
+  63.33%{
+    transform: rotate(318deg);
+    transform-origin: center bottom;
+  }
+  65%{
+    transform: rotate(324deg);
+    transform-origin: center bottom;
+  }
+  66.67%{
+    transform: rotate(330deg);
+    transform-origin: center bottom;
+  }
+  68.33%{
+    transform: rotate(336deg);
+    transform-origin: center bottom;
+  }
+  70%{
+    transform: rotate(342deg);
+    transform-origin: center bottom;
+  }
+  71.67%{
+    transform: rotate(348deg);
+    transform-origin: center bottom;
+  }
+  73.33%{
+    transform: rotate(354deg);
+    transform-origin: center bottom;
+  }
+  75%{
+    transform: rotate(360deg);
+    transform-origin: center bottom;
+  }
+  76.67%{
+    transform: rotate(366deg);
+    transform-origin: center bottom;
+  }
+  78.33%{
+    transform: rotate(372deg);
+    transform-origin: center bottom;
+  }
+  80%{
+    transform: rotate(378deg);
+    transform-origin: center bottom;
+  }
+  81.67%{
+    transform: rotate(384deg);
+    transform-origin: center bottom;
+  }
+  83.33%{
+    transform: rotate(390deg);
+    transform-origin: center bottom;
+  }
+  85%{
+    transform: rotate(396deg);
+    transform-origin: center bottom;
+  }
+  86.67%{
+    transform: rotate(402deg);
+    transform-origin: center bottom;
+  }
+  88.33%{
+    transform: rotate(408deg);
+    transform-origin: center bottom;
+  }
+  90%{
+    transform: rotate(414deg);
+    transform-origin: center bottom;
+  }
+  91.67%{
+    transform: rotate(420deg);
+    transform-origin: center bottom;
+  }
+  93.33%{
+    transform: rotate(426deg);
+    transform-origin: center bottom;
+  }
+  95%{
+    transform: rotate(432deg);
+    transform-origin: center bottom;
+  }
+  96.67%{
+    transform: rotate(438deg);
+    transform-origin: center bottom;
+  }
+  98.33%{
+    transform: rotate(444deg);
+    transform-origin: center bottom;
+  }
+  to{
+    transform: rotate(450deg);
+    transform-origin: center bottom;
+  }
+}
+ .hours-hand{
+   position: fixed;
+   left: 45%;
+   top: inherit;
+   animation: tick 43200s infinite;
+   background-color: var(--dangerTealHover);
+ }
+ .minutes-hand{
+   position: fixed;
+   left: 45%;
+   top: inherit;
+   animation: tick 3600s infinite;
+   background-color: var(--dangerTealHover);
+ }
+.seconds-hand{
+  position: fixed;
+  left: 45%;
+  top: inherit;
+  animation: tick 60s infinite;
+  background-color: var(--dangerTealHover);
+}
+.center-dot{
+  background-color: var(--dangerTealHover);
+  position: fixed;
+  left: 45%;
+  top: 49%;
+  border-radius: 50%;
+  z-index: 100;
+}
+.rounded-circle-clock{
+  background-color: rgba(255, 255, 255, 0);
+  transform-origin: center;
+  transform: rotate(-90deg);
+}
+
+
+
+/*#clock {
+  width: 400px;
+  height: 400px;
+  background: white;
+  border: 5px solid black;
+  border-radius: 50%;
+  position: relative;
+  left: 47%;
+}
+
+.hand {
+  width: 2px;
+  height: 90px;
+  background: black;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: translateX(-50%) rotate(0deg);
+  transition: transform 0.05s linear;
+}*/
